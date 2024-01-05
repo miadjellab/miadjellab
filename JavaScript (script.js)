@@ -1,0 +1,16 @@
+const positiveMessages = [
+  "You're amazing just the way you are!",
+  "Smile, it's contagious!",
+  "Believe in yourself and all that you are.",
+  "Every day may not be good, but there's something good in every day.",
+  "You have the power to create change.",
+  "Your potential is endless.",
+  "Sending you positive vibes!",
+  "The best is yet to come."
+];
+
+function generateHappiness() {
+  const randomIndex = Math.floor(Math.random() * positiveMessages.length);
+  const messageElement = document.getElementById('positiveMessage');
+  messageElement.textContent = positiveMessages[randomIndex];
+}
